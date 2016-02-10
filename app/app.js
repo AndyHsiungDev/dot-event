@@ -43,16 +43,21 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'MainController',
+      .when('/create-events'. {
+        templateUrl: 'views/create-events.html',
+        controller: 'EventCreationController',
         controllerAs: 'main'
       })
-      .when('/setup', {
-        templateUrl: 'views/setup.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      })
+      // .when('/contact', {
+      //   templateUrl: 'views/contact.html',
+      //   controller: 'MainController',
+      //   controllerAs: 'main'
+      // })
+      // .when('/setup', {
+      //   templateUrl: 'views/setup.html',
+      //   controller: 'MainController',
+      //   controllerAs: 'main'
+      // })
       .otherwise({
         redirectTo: '/'
       });

@@ -9,7 +9,8 @@
 
   angular
     .module('boilerplate')
-    .controller('MainController', MainController);
+    .controller('MainController', MainController)
+    .controller('EventCreationController', EventCreationController);
 
   MainController.$inject = ['LocalStorage', 'QueryService'];
 
@@ -33,5 +34,27 @@
     //   });
   }
 
+
+  function EventCreationController(LocalStorage, QueryService) {
+
+    // 'controller as' syntax
+    var self = this;
+
+
+    ////////////  function definitions
+    function submitForm() {
+
+    }
+
+
+    /**
+     * Load some data
+     * @return {Object} Returned object
+     */
+    // QueryService.query('GET', 'posts', {}, {})
+    //   .then(function(ovocie) {
+    //     self.ovocie = ovocie.data;
+    //   });
+  }
 
 })();
